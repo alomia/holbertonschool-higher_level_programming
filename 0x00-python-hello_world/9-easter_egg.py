@@ -1,3 +1,2 @@
-#!/usr/bin/python3
-import this
-print(this)
+#!/bin/bash
+echo import this | pthon3
