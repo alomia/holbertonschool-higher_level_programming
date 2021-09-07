@@ -1,2 +1,2 @@
-#!/bin/bash
-echo import this | pthon3
+#!/usr/bin/python3
+import this
