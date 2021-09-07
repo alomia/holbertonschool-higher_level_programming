@@ -7,9 +7,9 @@ if number < 0:
     lastdigit = lastdigit % 10
     lastdigit = lastdigit * -1
 else:
-    lastdigit = number % 10;
+    lastdigit = number % 10
 
-print('Last digit of {:d} is {:d}'.format(number, lastdigit),end = ' ')
+print('Last digit of {:d} is {:d}'.format(number, lastdigit), end=' ')
 
 if lastdigit > 5:
     print('and is greater than 5')
