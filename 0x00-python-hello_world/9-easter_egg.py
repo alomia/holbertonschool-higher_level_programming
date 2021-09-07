@@ -1,2 +1,3 @@
-#!/usr/bin/bash
-echo import this | python3
+#!/usr/bin/python3
+import this
+print(this)
