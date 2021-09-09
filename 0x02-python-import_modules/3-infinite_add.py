@@ -4,5 +4,5 @@ if __name__ == "__main__":
     counter = (len(argv)) - 1
     sum = 0
     for i in range(1, counter + 1):
-        sum += int(argv[i]) 
+        sum += int(argv[i])
     print(sum)
