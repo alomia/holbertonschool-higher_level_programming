@@ -5,6 +5,5 @@ def print_matrix_integer(matrix=[[]]):
     else:
         for i in range(len(matrix)):
             for j in range(len(matrix[i])):
-                print('{}{}'.format(matrix[i][j],'' if matrix[i][j] == matrix[i][-1] else ' '), end="")
-        
+                print('{}{}'.format(matrix[i][j], '' if matrix[i][j] == matrix[i][-1] else ' '), end="")
             print('')
