@@ -7,9 +7,10 @@ def safe_print_list_integers(my_list=[], x=0):
                 print("{:d}".format(my_list[i]), end="")
                 nb += 1
         print("")
-    except (IndexError, TypeError):
+    except IndexError:
         x = 0
         for i in my_list:
-            x += 1
+            if isinstance(my_list[i], int):
+                x += 1
         print("")
     return nb
