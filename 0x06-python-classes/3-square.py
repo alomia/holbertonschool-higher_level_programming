@@ -1,17 +1,19 @@
 #!/usr/bin/python3
-""" Square module """
+""" Square Module """
 
 
 class Square:
+    """ Square Class """
     def __init__(self, size=0):
+        """ size of square """
         if type(size) == int:
             if size >= 0:
-                self.__size__ = size
+                self.__size = size
             else:
                 raise ValueError("size must be >= 0")
         else:
             raise TypeError("size must be an integer")
 
     def area(self):
-        """ return area square by two"""
-        return self.__size__ ** 2
+        """ area of a square """
+        return self.__size**2
