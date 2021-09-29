@@ -1,3 +1,4 @@
 #!/usr/bin/python3
 class Square:
-    pass
+    def __dict__(self):
+        self.__dict__
