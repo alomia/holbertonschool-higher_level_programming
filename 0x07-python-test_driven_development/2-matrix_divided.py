@@ -10,6 +10,9 @@ def matrix_divided(matrix, div):
     Return:
         list: new matrix
     """
+    if type(matrix) != list:
+        raise TypeError("matrix must be a matrix (list of lists) of integers/fl\
+oats")
     for row in matrix:
         if type(row) != list:
             raise TypeError("matrix must be a matrix (list of lists) of \
