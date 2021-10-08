@@ -4,9 +4,8 @@
 
 def print_square(size):
     """
-    Args: size: size of the square
-    Returns:
-        print square
+    Args:
+        size: size of the square
     """
 
     if size < 0:
@@ -18,5 +17,4 @@ def print_square(size):
     for i in range(size):
         for j in range(size):
             print("#", end='')
-            i, j
         print("")
