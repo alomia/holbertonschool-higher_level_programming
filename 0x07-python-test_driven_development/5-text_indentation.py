@@ -7,17 +7,22 @@ def text_indentation(text):
     Args:
         text: text to print
     """
-    x = 0
-    if type(text) is not str:
+    if type(text) != str:
         raise TypeError("text must be a string")
+    flag = 0
+    newstring = ""
     for i in text:
-        if x == 1 and i is ' ':
-            print('', end='')
-            x = 0
-            continue
-        if i is '.' or i is '?' or i is ':':
-            print("{}\n". format(i))
-            x = 1
+        if flag == 1:
+            newstring = ""
+            flag = 0
+        if i not in "?:.":
+            newstring += i
         else:
-            print(i, end='')
-            x = 0
+            newstring += i
+            print(newstring.strip())
+            print()
+            flag = 1
+    if flag == 0 and '\n' not in newstring:
+        print(newstring.strip(), end="")
+    elif flag == 0:
+        print(newstring.strip())
