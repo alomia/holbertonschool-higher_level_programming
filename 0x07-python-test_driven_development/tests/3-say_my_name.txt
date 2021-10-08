@@ -3,28 +3,32 @@ document verification test
 Import module
 say_my_name = __import__('3-say_my_name').say_my_name
 
-Correct output for first and last name
->>> say_my_name("John", "Smith")i
-My name is John Smith
+test 1
+>>> say_my_name("Alejandro", "Alomia")
+My name is Alejandro Alomia
 
-incorrect output the last name is a number
->>> say_my_name("John", 12)
+test 2
+>>> say_my_name(18, "Alomia")
 Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/root/holbertonschool-higher_level_programming/0x07-python-test_driven_development/3-say_my_name.py", line 13, in say_my_name
-    raise TypeError("last_name must be a string")
-TypeError: last_name must be a string
-
-incorrect output name is a number
->>> say_my_name(2, "Smith")
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/root/holbertonschool-higher_level_programming/0x07-python-test_driven_development/3-say_my_name.py", line 11, in say_my_name
-    raise TypeError("first_name must be a string")
+...
 TypeError: first_name must be a string
 
-incorrect output no arguments are passed to the function
+test 3
+>>> say_my_name("Alejandro", 21)
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+test 4
+>>> say_my_name("Alejandro")
+My name is Alejandro
+
+test 5
+>>> say_my_name("", "")
+My name is
+
+test 6
 >>> say_my_name()
 Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
+...
 TypeError: say_my_name() missing 1 required positional argument: 'first_name'
