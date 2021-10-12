@@ -11,10 +11,4 @@ class MyList(list):
         Attributes:
         print_sorted: prints the list in a sorted fashion
         """
-        new_list = self[:]
-        for i in range(len(new_list) - 1):
-            if new_list[i] > new_list[i + 1]:
-                temp = new_list[i + 1]
-                new_list[i + 1] = new_list[i]
-                new_list[i] = temp
-        print(new_list)
+        print(sorted(self))
