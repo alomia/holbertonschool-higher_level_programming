@@ -9,4 +9,5 @@ def class_to_json(obj):
     Args:
         obj: save value
     """
-    return obj
+
+    return obj.__dict__
