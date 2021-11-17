@@ -1,2 +1,2 @@
-sudo mysql
+-- List databases
 SHOW DATABASE;
