@@ -1,2 +1,2 @@
 -- Full description
-DESC first_table FROM 
+DESC first_table;
