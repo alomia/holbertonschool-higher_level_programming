@@ -1,0 +1,2 @@
+sudo mysql
+SHOW DATABASE;
