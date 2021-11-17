@@ -1,2 +1,2 @@
 -- List all in table
-SELECT FILE first_table;
+FILE first_table;
