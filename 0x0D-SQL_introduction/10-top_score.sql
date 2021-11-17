@@ -1,2 +1,2 @@
 -- List by best
-SELECT COUNT(*) FROM second_table;
+SELECT TOP COUNT(*) FROM second_table;
