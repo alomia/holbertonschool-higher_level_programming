@@ -1,2 +1,2 @@
 -- Full description
-DESC first_table FROM hbtn_0c_0;
+DESC CREATE TABLE first_table;
