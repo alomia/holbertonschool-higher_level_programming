@@ -1,2 +1,2 @@
 -- Average
-SELECT score, AVG(average) FROM second_table GROUP BY score;
+SELECT AVG(second_table) AS 'Average';
