@@ -1,2 +1,2 @@
 -- Full description
-SHOW DESC first_table;
+DESC 'first_table';
