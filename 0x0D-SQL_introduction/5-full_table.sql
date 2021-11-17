@@ -1,2 +1,2 @@
 -- Full description
-DESC first_table;
+{DESCRIBE|DESC} first_table;
