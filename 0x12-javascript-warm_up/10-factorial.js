@@ -1,11 +1,19 @@
 #!/usr/bin/node
 
-const number = parseInt(process.argv[2]);
+const args = process.argv;
 
-let factorial = 1;
+const x = parseInt(args[2]);
 
-for (let step = 1; step <= number; step++) {
-  factorial *= step;
+try {
+  const res = factorial(x);
+  console.log(res);
+} catch (error) {
+  console.log(1);
 }
 
-console.log(factorial);
+function factorial (x) {
+  if (x === 0) {
+    return 1;
+  }
+  return x * factorial(x - 1);
+}
