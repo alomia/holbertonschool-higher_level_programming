@@ -8,4 +8,4 @@ for (let step = 1; step <= number; step++) {
   factorial *= step;
 }
 
-console.log(factorial)
+console.log(factorial);
