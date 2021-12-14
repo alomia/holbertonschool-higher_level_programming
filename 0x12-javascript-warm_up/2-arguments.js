@@ -1,8 +1,6 @@
 #!/usr/bin/node
 
-const process = requiere('process');
-
-const argv = process.argv;
+import { argv } from 'process';
 
 const argc = argv.length;
 
@@ -11,5 +9,5 @@ if (argc <= 2) {
 } else if (argc === 3) {
   console.log('Argument found');
 } else {
-  console.log('Argument found')
+  console.log('Argument found');
 }
