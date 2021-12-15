@@ -13,5 +13,5 @@ if (argc <= 2) {
 
   arrayNumbers.sort();
 
-  console.log(arrayNumbers[argc - 1]);
+  console.log(parseInt(arrayNumbers[argc - 1]));
 }
