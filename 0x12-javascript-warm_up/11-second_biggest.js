@@ -1,18 +1,16 @@
 #!/usr/bin/node
 
-const args = process.argv;
+const argc = process.argv.length - 2;
 
-const myArray = [];
+const arrayNumbers = [];
 
-if (args.length <= 3) {
+if (argc <= 1) {
   console.log(0);
-} else if (args.length > 3) {
-  args.forEach(function (element) {
-    const x = parseInt(element);
-    if (isNaN(x)) {
-      myArray.push('');
-    }
-    myArray.push(element);
-  });
-  console.log(myArray);
+} else {
+  for (let step = 1; step <= argc; step++) {
+    arrayNumbers.push(process.argv[step + 1]);
+  }
+  
+  arrayNumbers.sort()
+  console.log(arrayNumbers[argc - 1]);
 }
