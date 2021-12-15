@@ -5,4 +5,4 @@ module.exports = class Rectangle {
     this.w = w;
     this.h = h;
   }
-}
+};
