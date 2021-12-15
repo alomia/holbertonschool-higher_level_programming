@@ -1,16 +1,16 @@
 #!/usr/bin/node
-
-const argc = process.argv.length - 2;
-
+let biggest = 0;
+let i;
 const arrayNumbers = [];
-
-if (argc <= 1) {
-  console.log(0);
-} else {
-  for (let step = 1; step <= argc; step++) {
-    arrayNumbers.push(process.argv[step + 1]);
+for (i = 2; i < process.argv.length; i++) {
+  if (Number.isNaN(parseInt(process.argv[i])) === false) {
+    arrayNumbers[i - 2] = parseInt(process.argv[i]);
   }
-
-  arrayNumbers.sort();
-  console.log(arrayNumbers[argc - 1]);
 }
+if (arrayNumbers.length > 1) {
+  biggest = Math.max.apply(null, arrayNumbers);
+  i = arrayNumbers.indexOf(biggest);
+  arrayNumbers[i] = -Infinity;
+  biggest = Math.max.apply(null, arrayNumbers);
+}
+console.log(biggest);
