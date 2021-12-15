@@ -10,7 +10,7 @@ if (argc <= 1) {
   for (let step = 1; step <= argc; step++) {
     arrayNumbers.push(process.argv[step + 1]);
   }
-  
-  arrayNumbers.sort()
+
+  arrayNumbers.sort();
   console.log(arrayNumbers[argc - 1]);
 }
