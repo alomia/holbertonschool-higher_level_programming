@@ -2,7 +2,7 @@
 
 const argc = process.argv.length - 2;
 
-const arrayNumbers = [];
+arrayNumbers = [];
 
 if (argc <= 1) {
   console.log('0');
