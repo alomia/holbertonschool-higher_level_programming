@@ -4,7 +4,7 @@ const argc = process.argv.length - 2;
 
 const arrayNumbers = [];
 
-if (argc <= 2) {
+if (argc <= 1) {
   console.log('0');
 } else {
   for (let step = 1; step <= argc; step++) {
