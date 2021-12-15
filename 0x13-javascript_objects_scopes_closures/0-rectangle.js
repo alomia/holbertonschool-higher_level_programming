@@ -1,6 +1,3 @@
 #!/usr/bin/bash
 
-class Rectangle {
-}
-
-module.export = Rectangle;
+module.exports = class Rectangle {};
