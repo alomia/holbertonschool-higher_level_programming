@@ -22,6 +22,4 @@ def connection():
     cur.close()
     conn.close()
 
-
 connection()
-
