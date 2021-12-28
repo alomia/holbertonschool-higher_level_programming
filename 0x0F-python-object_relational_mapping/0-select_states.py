@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""list all states in database hbtn_0e_0_usa"""
 import MySQLdb
 from sys import argv
 
