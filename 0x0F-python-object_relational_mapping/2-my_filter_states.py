@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-lists all states with a name starting with N (upper N)
-from the hbtn_0e_0_usa database
+takes an argument and displays all values in the hbtn_0e_0_usa
+state table whose name matches the argument.
 """
 
 import MySQLdb
