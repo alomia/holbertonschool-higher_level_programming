@@ -3,17 +3,23 @@
 import MySQLdb
 from sys import argv
 
-conn = MySQLdb.connect(
-    host="localhost",
-    user=argv[1],
-    passwd=argv[2],
-    db="hbtn_0e_0_usa"
-    )
+try:
+    conn = MySQLdb.connect(
+            host="localhost",
+            user=argv[1],
+            passwd=argv[2],
+            db=argv[3]
+        )
 
-cur = conn.cursor()
-cur.execute("SELECT * FROM states")
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM states ORDER BY states.id ASC")
+    rows = cur.fetchall()
 
-rows = cur.fetchall()
+    for row in rows:
+        print(row)
 
-for row in rows:
-    print(row)
+    cur.close()
+    conn.close()
+
+except MySQLdb.Error as e:
+    print(e)
