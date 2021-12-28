@@ -17,10 +17,10 @@ if __name__ == "__main__":
 
     cur = conn.cursor()
     cur.execute(
-            f"SELECT *\
+            "SELECT *\
             FROM states\
-            WHERE states.name = '{argv[4]}'\
-            ORDER BY states.id ASC"
+            WHERE BINARY name = '{}'\
+            ORDER BY states.id".format(argv[4])
         )
     rows = cur.fetchall()
 
