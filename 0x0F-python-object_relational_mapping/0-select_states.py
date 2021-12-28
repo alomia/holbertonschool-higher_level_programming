@@ -6,6 +6,7 @@ from sys import argv
 try:
     conn = MySQLdb.connect(
             host="localhost",
+            port="3306",
             user=argv[1],
             passwd=argv[2],
             db=argv[3]
