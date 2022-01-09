@@ -1,3 +1,3 @@
 #!/bin/bash
 # cURL only methods
-curl -sL -X DELETE "$1"
+curl -v -X OPTIONS "$1" | Allow
