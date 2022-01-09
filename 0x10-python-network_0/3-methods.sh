@@ -1,3 +1,3 @@
 #!/bin/bash
 # cURL only methods
-curl -i -X OPTIONS www.google.com | grep Allow
+curl -si -X OPTIONS "$1" | grep Allow: | cut -b 8-
